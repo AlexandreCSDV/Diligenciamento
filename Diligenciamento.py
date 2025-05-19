@@ -152,7 +152,7 @@ def create_all_pdfs(grouped, df):
     doc.build(elements)
     return buffer
 
-st.title("Gerador de PDF por Vendedor")
+st.title("Gerador de PDF Diligenciamento")
 uploaded_file = st.file_uploader("Escolha um arquivo Excel", type="xlsx")
 if uploaded_file is not None:
     df = pd.read_excel(uploaded_file, engine='openpyxl')
